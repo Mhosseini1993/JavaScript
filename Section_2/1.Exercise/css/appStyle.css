@@ -1,0 +1,12 @@
+
+.Container{
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid rebeccapurple;
+    padding: 8px;
+}
+.Input {
+    max-width: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+}
