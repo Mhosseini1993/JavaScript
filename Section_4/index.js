@@ -73,7 +73,7 @@
 ////Ans:22
 // function sum() {
 //     var res = 0;
-//     for (let i = 0; i < arguments.length; i++) {
+//     for (var i = 0; i < arguments.length; i++) {
 //         res += arguments[i];
 //     }
 //     return res;
@@ -99,28 +99,32 @@
 //     }
 //     return res;
 // }
-// console.log(sum(10,2));
-// console.log(subtraction(10,2));
-// console.log(multiply(10,2));
-// console.log(division(10,2));
+// console.log(sum(4,2,3));
+// console.log(subtraction(4,2,3));
+// console.log(multiply(4,2,3));
+// console.log(division(4,2,3));
 
 ////Ans:23
-// function operation(operand) {
-//     switch (operand) {
-//         case "sum":
-//             return sum(arguments[2]);
-//         case "sub":
-//             return subtraction();
-//         case "mul":
-//             return multiply();
-//         case "div":
-//             return division();
+// function operation(op,...numbers) {
+
+//     switch (String(op).toUpperCase()) {
+//         case "SUM":
+//             return sum(...numbers);
+//         case "SUB":
+//             return subtraction(...numbers);
+//         case "MUL":
+//             return multiply(...numbers);
+//         case "DIV":
+//             return division(...numbers);
 //         default:
 //             return "Unknown operand"
 //             break;
 //     }
 // }
-// console.log(operation("sum",1,2,3));
+//  console.log(operation("sum",4,2,3));
+//  console.log(operation("sub",4,2,3));
+//  console.log(operation("mul",4,2,3));
+//  console.log(operation("div",4,2,3));
 
 ////Ans:24
 // var number = 50;
